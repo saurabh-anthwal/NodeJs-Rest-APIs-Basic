@@ -1,20 +1,35 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Node.js Rest CRUD API
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Basic Instalation
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+`npm init -y`
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+`npm install express sequelize mysql2 cors --save`
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Folder Structure
+
+. 1 create a new server.js file.
+
+. 2  create a separate config folder for configuration with db.config.js file
+
+. 3 Initialize Sequelize -- We’re gonna initialize Sequelize in app/models folder that will contain model in the next step.---create app/models/index.js
+
+. 4 Define the Sequelize Model -- In models folder, create tutorial.model.js
+
+. 5 Create the Controller -- create productController.js
+
+. 6 Define Routes --/api/tutorials: GET, POST, DELETE
+
+. 7 Test the APIs
+
+
+### Run Commant 
+
+`nodemon serve`
+
+
+[Refrence Link] : (https://www.bezkoder.com/node-js-express-sequelize-mysql/)
+
+
+(https://sequelize.org/docs/v6/core-concepts/model-basics/)
+
